@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishal Water Services</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#f4fbff;
+overflow-x:hidden;
+}
+
+header{
+background:linear-gradient(135deg,#0077b6,#00b4d8);
+color:white;
+padding:25px;
+text-align:center;
+}
+
+header h1{
+font-size:3rem;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{transform:scale(1);}
+to{
+transform:scale(1.05);
+text-shadow:0 0 20px #fff;
+}
+}
+
+.marquee{
+background:#023e8a;
+color:white;
+padding:12px;
+font-weight:bold;
+font-size:18px;
+white-space:nowrap;
+overflow:hidden;
+}
+
+.marquee span{
+display:inline-block;
+padding-left:100%;
+animation:move 18s linear infinite;
+}
+
+@keyframes move{
+0%{transform:translate0);}
+100%{transform:translate-100%);}
+}
+
+.hero{
+height:80vh;
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url('https://images.unsplash.com/photo-1564419320461-6870880221ad?w=1200');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h2{
+font-size:3rem;
+animation:slide 4s infinite;
+}
+
+@keyframes slide{
+0%{transform:translate-40px);}
+50%{transform:translate40px);}
+100%{transform:translate-40px);}
+}
+
+.hero p{
+font-size:1.3rem;
+margin-top:15px;
+}
+
+.btn{
+margin-top:25px;
+padding:12px 25px;
+background:#00b4d8;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+section{
+padding:60px 10%;
+}
+
+.title{
+text-align:center;
+font-size:2rem;
+color:#0077b6;
+margin-bottom:30px;
+}
+
+.about{
+background:white;
+border-radius:15px;
+padding:30px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minma250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.4s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#0077b6;
+margin-bottom:10px;
+}
+
+.contact{
+background:#0077b6;
+color:white;
+border-radius:15px;
+padding:35px;
+line-height:2;
+font-size:18px;
+}
+
+.contact a{
+color:#fff;
+text-decoration:none;
+}
+
+footer{
+background:#023e8a;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>💧 Vishal Water Services 💧</h1>
+</header>
+
+<div class="marquee">
+<span>
+Welcome to Vishal Water Services | Premium Mineral Water Supply | Customized Water Bottles for Restaurants, Cafes & Resorts | Clean Water • Better Life • Trusted Service
+</span>
+</div>
+
+<section class="hero">
+<h2>Pure Mineral Water & Customized Water Bottles</h2>
+<p>For Restaurants • Cafes • Resorts • Offices • Industries • Events</p>
+
+<a class="btn" href="tel:9321766607">
+📞 Call Now
+</a>
+</section>
+
+<section>
+<h2 class="title">About Us</h2>
+
+<div class="about">
+<p>
+Vishal Water Services is a trusted water solutions provider based in Navi Mumbai.
+We specialize in premium Mineral Water Supply, Customized Water Bottles with your
+brand logo, and complete water solutions for Restaurants, Cafes, Resorts,
+Hotels, Offices, Industries and Events.
+
+Our goal is to provide safe, hygienic and high-quality drinking water with reliable service and customer satisfaction.
+</p>
+</div>
+</section>
+
+<section>
+<h2 class="title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>💧 Mineral Water Supply</h3>
+<p>Premium quality drinking water.</p>
+</div>
+
+<div class="card">
+<h3>🏷 Customized Water Bottles</h3>
+<p>Your logo and branding on bottles.</p>
+</div>
+
+<div class="card">
+<h3>🍽 Restaurant Solutions</h3>
+<p>Reliable water supply for restaurants.</p>
+</div>
+
+<div class="card">
+<h3>☕ Cafe Water Services</h3>
+<p>Clean and safe water for cafes.</p>
+</div>
+
+<div class="card">
+<h3>🏝 Resort Water Supply</h3>
+<p>Water solutions for resorts and hotels.</p>
+</div>
+
+<div class="card">
+<h3>🏭 Industrial Water Services</h3>
+<p>Bulk water supply for industries.</p>
+</div>
+
+<div class="card">
+<h3>🚚 Bulk Water Delivery</h3>
+<p>Fast and reliable delivery service.</p>
+</div>
+
+<div class="card">
+<h3>📞 24×7 Customer Support</h3>
+<p>Always available to help.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="title">Contact Us</h2>
+
+<div class="contact">
+
+<b>👤 Name:</b> Vishal Yadav<br>
+
+<b>📞 Contact:</b>
+<a href="tel:9321766607">9321766607</a><br>
+
+<b>📧 Email:</b>
+<a href="mailto:yadavvishal4747@gmail.com">
+yadavvishal4747@gmail.com
+</a><br>
+
+<b>📍 Address:</b><br>
+Rabale MIDC Industrial Area,<br>
+Navi Mumbai - 400701
+
+</div>
+</section>
+
+<footer>
+© 2025 Vishal Water Services | All Rights Reserved
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/919321766607"
+target="_blank">
+WhatsApp Us
+</a>
+
+</body>
+</html> 
