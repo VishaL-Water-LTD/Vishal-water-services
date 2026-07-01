@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vishal Water Services - Coming Soon</title>
+<title>VISHAL WATER SERVICES</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -15,75 +16,86 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
+background:#050b1f;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+min-height:100vh;
 background:
 linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
-url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80');
+url('https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1800&q=80');
 background-size:cover;
 background-position:center;
-overflow:hidden;
-color:white;
-text-align:center;
-padding:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:30px;
 }
 
 .container{
-max-width:900px;
+max-width:1200px;
+width:100%;
 }
 
 .logo{
 font-size:55px;
 font-weight:800;
-text-shadow:0 0 15px #00d4ff,0 0 40px #00d4ff;
+color:#ffffff;
+text-shadow:
+0 0 10px #00d4ff,
+0 0 30px #00d4ff;
 }
 
 .logo span{
 color:#00d4ff;
 }
 
-.coming{
-font-size:80px;
-font-weight:800;
-margin-top:20px;
-text-shadow:0 0 25px #00d4ff;
-animation:pulse 2s infinite;
-}
-
-@keyframes pulse{
-50%{transform:scale(1.05);}
-}
-
-.text{
-font-size:22px;
-margin-top:20px;
-line-height:1.8;
-color:#d8f6ff;
-}
-
 .ticker{
-margin-top:30px;
-background:rgba(0,191,255,.15);
-border:1px solid #00bfff;
+margin:25px 0;
 padding:12px;
 border-radius:50px;
+border:1px solid #00d4ff;
+background:rgba(0,212,255,.08);
 overflow:hidden;
 }
 
 .ticker span{
 display:inline-block;
 white-space:nowrap;
-animation:move 15s linear infinite;
-color:#7fe7ff;
+animation:move 18s linear infinite;
 font-weight:600;
+color:#7cefff;
 }
 
 @keyframes move{
 0%{transform:translateX(100%);}
 100%{transform:translateX(-100%);}
+}
+
+.hero h1{
+font-size:80px;
+line-height:1.05;
+margin-top:15px;
+text-shadow:0 0 25px #00d4ff;
+}
+
+.glow{
+color:#00d4ff;
+}
+
+.hero p{
+font-size:22px;
+max-width:700px;
+margin-top:20px;
+line-height:1.8;
+color:#d6f7ff;
 }
 
 .buttons{
@@ -93,48 +105,152 @@ margin-top:35px;
 .btn{
 display:inline-block;
 padding:15px 30px;
-margin:10px;
 border-radius:50px;
 text-decoration:none;
 font-weight:700;
-color:white;
+margin-right:12px;
+margin-top:10px;
 }
 
 .call{
-background:#007bff;
-box-shadow:0 0 20px #007bff;
+background:#008cff;
+color:white;
+box-shadow:0 0 25px #008cff;
 }
 
 .whatsapp{
 background:#25D366;
-box-shadow:0 0 20px #25D366;
+color:white;
+box-shadow:0 0 25px #25D366;
+}
+
+.section{
+padding:80px 8%;
+}
+
+.title{
+text-align:center;
+font-size:42px;
+margin-bottom:35px;
+color:#00d4ff;
+text-shadow:0 0 15px #00d4ff;
+}
+
+.about{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(0,212,255,.2);
+backdrop-filter:blur(12px);
+padding:35px;
+border-radius:25px;
+line-height:2;
+font-size:18px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(0,212,255,.2);
+backdrop-filter:blur(12px);
+padding:30px;
+border-radius:20px;
+text-align:center;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(0,212,255,.4);
+}
+
+.card h3{
+color:#00d4ff;
+margin-bottom:12px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.stat{
+background:rgba(255,255,255,.05);
+padding:25px;
+border-radius:20px;
+text-align:center;
+border:1px solid rgba(0,212,255,.2);
+}
+
+.stat h2{
+font-size:40px;
+color:#00d4ff;
 }
 
 .contact{
-margin-top:30px;
-font-size:18px;
+background:rgba(255,255,255,.05);
+padding:35px;
+border-radius:25px;
+border:1px solid rgba(0,212,255,.2);
 line-height:2;
+font-size:18px;
+}
+
+.contact a{
+color:#7cefff;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#020617;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+.float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 22px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+box-shadow:0 0 20px #25D366;
 }
 
 @media(max-width:768px){
 
 .logo{
-font-size:32px;
+font-size:34px;
 }
 
-.coming{
+.hero h1{
 font-size:42px;
 }
 
-.text{
+.hero p{
 font-size:16px;
 }
 
+.title{
+font-size:30px;
 }
+
+}
+
 </style>
 </head>
 
 <body>
+
+<section class="hero">
 
 <div class="container">
 
@@ -142,34 +258,142 @@ font-size:16px;
 💧 VISHAL <span>WATER SERVICES</span>
 </div>
 
-<div class="coming">
-COMING SOON
-</div>
-
-<div class="text">
-Premium Mineral Water Supply & Customized Water Bottles<br>
-For Restaurants, Cafes, Resorts, Hotels & Corporate Offices
-</div>
-
 <div class="ticker">
 <span>
-★ Premium Mineral Water ★ Customized Bottles ★ Restaurants ★ Cafes ★ Resorts ★ Hotels ★ Corporate Supply ★ Navi Mumbai ★
+★ PREMIUM MINERAL WATER ★ CUSTOMIZED WATER BOTTLES ★ RESTAURANTS ★ CAFES ★ RESORTS ★ HOTELS ★ CORPORATE OFFICES ★ FAST DELIVERY ACROSS NAVI MUMBAI ★
 </span>
 </div>
+
+<h1>
+PURE WATER <br>
+<span class="glow">PREMIUM EXPERIENCE</span>
+</h1>
+
+<p>
+Premium Mineral Water Supply & Customized Water Bottles for Restaurants, Cafes, Resorts, Hotels, Corporate Offices and Industrial Clients.
+</p>
 
 <div class="buttons">
 <a href="tel:9321766607" class="btn call">📞 Call Now</a>
 <a href="https://wa.me/919321766607" class="btn whatsapp">💬 WhatsApp</a>
 </div>
 
-<div class="contact">
-👤 Vishal Yadav<br>
-📞 9321766607<br>
-📧 yadavvishal4747@gmail.com<br>
-📍 Rabale MIDC Industrial Area, Navi Mumbai - 400701
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">About Us</h2>
+
+<div class="about">
+
+Vishal Water Services is a trusted provider of Premium Mineral Water and Customized Water Bottles in Navi Mumbai.
+
+We proudly serve Restaurants, Cafes, Resorts, Hotels, Corporate Offices and Industrial Clients with high-quality drinking water and custom branded bottle solutions.
+
+Quality • Hygiene • Reliability • On-Time Delivery
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>💧 Mineral Water Supply</h3>
+<p>Premium quality drinking water solutions.</p>
+</div>
+
+<div class="card">
+<h3>🏷 Customized Water Bottles</h3>
+<p>Your logo and branding on every bottle.</p>
+</div>
+
+<div class="card">
+<h3>🍽 Restaurant Solutions</h3>
+<p>Reliable supply for restaurants.</p>
+</div>
+
+<div class="card">
+<h3>☕ Cafe Supply</h3>
+<p>Premium water solutions for cafes.</p>
+</div>
+
+<div class="card">
+<h3>🏨 Resort & Hotel Supply</h3>
+<p>Professional hospitality water service.</p>
+</div>
+
+<div class="card">
+<h3>🏢 Corporate Supply</h3>
+<p>Bulk supply for offices and businesses.</p>
 </div>
 
 </div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">Our Strength</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>500+</h2>
+<p>Happy Clients</p>
+</div>
+
+<div class="stat">
+<h2>1M+</h2>
+<p>Bottles Delivered</p>
+</div>
+
+<div class="stat">
+<h2>24×7</h2>
+<p>Support</p>
+</div>
+
+<div class="stat">
+<h2>100%</h2>
+<p>Quality Focus</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">Contact Us</h2>
+
+<div class="contact">
+
+👤 <strong>Vishal Yadav</strong><br>
+
+📞 <a href="tel:9321766607">9321766607</a><br>
+
+📧 <a href="mailto:yadavvishal4747@gmail.com">yadavvishal4747@gmail.com</a><br>
+
+📍 Rabale MIDC Industrial Area,<br>
+Navi Mumbai - 400701
+
+</div>
+
+</section>
+
+<footer>
+© 2025 VISHAL WATER SERVICES | Navi Mumbai
+</footer>
+
+<a class="float" href="https://wa.me/919321766607">
+WhatsApp Us
+</a>
 
 </body>
 </html>
